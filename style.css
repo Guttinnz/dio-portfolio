@@ -77,7 +77,7 @@ a:hover {
     align-items: center;
 }
 
-.checkbox{
+.checkbox {
     height: 100px;
     width: 100px;
     position: absolute;
@@ -163,35 +163,36 @@ a:hover {
 
 /*ANIMAÇÃO MENU */
 
-#toggle:checked + .checkbox .trace:nth-child(1) {
+#toggle:checked+.checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
     background-color: #085078;
     top: 47px;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(2) {
+#toggle:checked+.checkbox .trace:nth-child(2) {
     transform: translateX(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(3) {
+#toggle:checked+.checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
     background-color: #085078;
     top: 48px;
 }
 
-#toggle:checked + .checkbox {
+#toggle:checked+.checkbox {
     background-color: white;
 }
 
-#toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white; /*vai substiuir toda a tela */
+#toggle:checked~.menu {
+    box-shadow: 0px 0px 0px 100vmax white;
+    /*vai substiuir toda a tela */
     z-index: 1;
 }
 
-#toggle:checked ~ .menu-items {
+#toggle:checked~.menu-items {
     visibility: visible;
     opacity: 1;
 }
@@ -239,7 +240,8 @@ a:hover {
     color: rgb(109, 109, 109);
 }
 
-.card-wrapper { /* ajusta a abertura do efeito para dentro do card*/
+.card-wrapper {
+    /* ajusta a abertura do efeito para dentro do card*/
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -280,13 +282,13 @@ a:hover {
     filter: unset;
 }
 
-.card:hover > .card-wrapper::before {
+.card:hover>.card-wrapper::before {
     opacity: 1;
     width: 350px;
     height: 250px;
 }
 
-.card:hover > .card-wrapper p {
+.card:hover>.card-wrapper p {
     font-size: 14px;
     opacity: 1;
     visibility: visible;
@@ -318,8 +320,7 @@ a:hover {
         flex-direction: column;
     }
 
-    .container .card-container:nth-child(1)
-    .container .card-container:nth-child(3) {
+    .container .card-container:nth-child(1) .container .card-container:nth-child(3) {
         flex-direction: column-reverse;
     }
 
@@ -334,7 +335,7 @@ a:hover {
         text-align: center;
     }
 
-    .card:hover > .card-wrapper::before {
+    .card:hover>.card-wrapper::before {
         height: 190px;
         width: 190px;
     }
